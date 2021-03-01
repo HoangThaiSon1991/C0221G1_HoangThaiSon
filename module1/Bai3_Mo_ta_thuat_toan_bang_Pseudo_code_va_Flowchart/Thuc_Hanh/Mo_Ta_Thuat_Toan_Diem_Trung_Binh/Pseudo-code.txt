@@ -1,0 +1,15 @@
+
+BEGIN
+   INPUT 
+Math 
+Physics 
+Chemistry
+   Average = (Math + Physics + Chemistry) / 3
+Display Average
+   END IF 
+END 
+
+
+
+
+
