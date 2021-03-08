@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td>Amount</td>
+            <td>From Currency</td>
+            <td>To Currency</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input id="text"> </td>
+            //xác nhận
+            <td><select id="fromCurrency">
+                <option value = "23000">Vietnam</option>
+                <option value = "1">USD</option>
+                <option value = "200">JP</option>
+            </select></td>
+            <td><select id ="fromCurrency1">
+                <option value = "23000">Vietnam</option>
+                <option value = "1">USD</option>
+                <option value = "200">JP</option>
+            </select> </td>
+            <td style="background-color: blueviolet"><input type="button" onclick="tinh()" value="Convert"> </td>
+        </tr>
+    </table>
+</form>
+<p id="ketqua"></p>
+<script>
+    function tinh() {
+        let amonunt=document.getElementById("text").value;
+        // Tìm đến giá trị
+        let fromCurrency =document.getElementById("fromCurrency").value;
+        let fromCurrency1 =document.getElementById("fromCurrency1").value;
+        let ketQua=amonunt*fromCurrency1/fromCurrency;
+        document.getElementById("ketqua").innerHTML="hien thi ket qua"+ketQua;
+        //liên kết với kết quả
+
+    }
+</script>
+</body>
+</html>

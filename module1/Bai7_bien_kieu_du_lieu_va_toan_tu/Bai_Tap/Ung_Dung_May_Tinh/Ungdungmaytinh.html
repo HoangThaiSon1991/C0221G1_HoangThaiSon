@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tínhAssignment</title>
+</head>
+<body>
+<h2>Caculator</h2>
+<table>
+    <tr>
+        <td><input id="text"> </td>
+        <td><input id="text2"> </td>
+</table>
+<table>
+    <tr>
+        <td><input type="button" onclick="tinhacong()" value="Addition(+)"></td>
+        <td><input type="button" onclick="tinhtru()" value="Subtraction(-)"></td>
+        <td><input type="button" onclick="tinhnhan()" value="Multiplication(X)"></td>
+        <td><input type="button" onclick="tinhchia()" value="Division(/)"></td>
+    </tr>
+</table>
+<p id="ketQua"> Result Division:</p>
+<script>
+    function tinhacong() {
+    let text=document.getElementById("text").value;
+    let text2=document.getElementById("text2").value;
+    let ketQuancong=(parseInt(text))+(parseInt(text2));
+        document.getElementById("ketQua").innerHTML="Result Division:"+ketQuancong;
+    }
+
+</script>
+<script>
+    function tinhtru() {
+        let text=document.getElementById("text").value;
+        let text2=document.getElementById("text2").value;
+        let ketQuatru=(parseInt(text))-(parseInt(text2));
+        document.getElementById("ketQua").innerHTML="Result Division:"+ketQuatru;
+    }
+
+</script>
+<script>
+    function tinhnhan() {
+        let text=document.getElementById("text").value;
+        let text2=document.getElementById("text2").value;
+        let ketQuannhan=(parseInt(text))*(parseInt(text2));
+        document.getElementById("ketQua").innerHTML="Result Division:"+ketQuannhan;
+    }
+
+</script>
+<script>
+    function tinhchia() {
+        let text=document.getElementById("text").value;
+        let text2=document.getElementById("text2").value;
+        let ketQuachi=(parseInt(text))/(parseInt(text2));
+        document.getElementById("ketQua").innerHTML="Result Division:"+ketQuachi;
+    }
+
+</script>
+</body>
+</html>
