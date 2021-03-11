@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemKiemTra=parseFloat(prompt("điểm kiểm tra cấp bậc 10 :",''));
+    let diemGiuaKy=parseFloat(prompt("điểm giữa kỳ cấp bậc 10 :",''));
+    let diemCuoiky=parseFloat(prompt("điểm cuối kỳ cấp bậc 10 :",''));
+    let ketQua= ((diemKiemTra+diemGiuaKy*2+diemCuoiky*3)/6)>8?"xếp loại giỏi":((diemKiemTra+diemGiuaKy*2+diemCuoiky*3)/6)>7?"Xếp loại khá":((diemKiemTra+diemGiuaKy*2+diemCuoiky*3)/6)>5?"Xếp loại trung bình":"Loại yếu";
+    document.write(ketQua)
+</script>
+</body>
+</html>
