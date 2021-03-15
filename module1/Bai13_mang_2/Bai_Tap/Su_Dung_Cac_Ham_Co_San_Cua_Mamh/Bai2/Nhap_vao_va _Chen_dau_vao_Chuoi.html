@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let nhapVao= parseFloat(prompt("Nhap vao day so:",''));
+    let max = nhapVao[0];
+    let index = 0;
+    for (let i = 1; i < nhapVao.length; i++) {
+        if (nhapVao[i] %2==0) {
+            max = nhapVao[i];
+            index = i;
+        }
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let fiBo1 = 1;
+    let fiBo2 = 1;
+    let fiBo3 = 0;
+
+    for (let i = 1; i <= 20; i++) {
+        fiBo3 = fiBo1;
+        fiBo1 = fiBo1 + fiBo2;
+        fiBo2 = fiBo3;
+        let ketQua = fiBo3
+        if (ketQua % 5 == 0) {
+            document.write(ketQua);
+            break;
+
+        }
+
+    }
+
+
+
+
+
+             // let fiBo1 = 0;
+          // let fiBo2 = 1;
+          // let fiBo3 = 0;
+          // do{
+          //     fiBo3 = fiBo1;
+          //     if(fiBo3%5==0&&fiBo3!==0){
+          //         alert(fiBo3)
+          //     }
+          //     fiBo1 = fiBo1 + fiBo2;
+          //     fiBo2 = fiBo3;
+          //
+          // }while (fiBo3%5!==0||fiBo3==0)
+
+</script>
+</body>
+</html>

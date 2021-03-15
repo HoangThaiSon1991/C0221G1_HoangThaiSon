@@ -5,18 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-
 <script>
     let fiBo1 = 0;
     let fiBo2 = 1;
     let fiBo3 = 0;
+    let tong=0;
     for (let i = 0; i < 20; i++) {
         fiBo3 = fiBo1;
         fiBo1 = fiBo1 + fiBo2;
         fiBo2 = fiBo3;
-        document.write(fiBo3 + "<br>");
-
+tong=tong+fiBo3;
     }
+    alert(tong);
 </script>
+
 </body>
 </html>
