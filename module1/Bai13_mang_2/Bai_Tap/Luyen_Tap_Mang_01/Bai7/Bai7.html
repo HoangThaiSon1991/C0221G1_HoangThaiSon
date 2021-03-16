@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt("nhap n phan tu");
+    let kiemTra = prompt("nhap vao V:")
+    let mang = [];
+    for (let i = 0; i < n; i++) {
+        mang[i] = prompt("nhap gia tri cua mang");
+    }
+    for (let i = 0; i < n; i++) {
+        if (mang[i] === kiemTra) {
+            for (let j = i; j < n; j++) {
+                mang[i] = mang[i + 1];
+            }
+            mang[n - 1] = 0;
+        }
+    }
+    document.write(mang);
+
+
+
+</script>
+</body>
+</html>

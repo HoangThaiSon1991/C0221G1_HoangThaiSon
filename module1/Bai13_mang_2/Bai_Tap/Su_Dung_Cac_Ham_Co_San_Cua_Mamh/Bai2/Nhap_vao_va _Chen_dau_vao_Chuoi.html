@@ -7,16 +7,19 @@
 <body>
 
 <script>
-    let nhapVao= parseFloat(prompt("Nhap vao day so:",''));
-    let max = nhapVao[0];
-    let index = 0;
-    for (let i = 1; i < nhapVao.length; i++) {
-        if (nhapVao[i] %2==0) {
-            max = nhapVao[i];
-            index = i;
+    let num = prompt("Nhap day so vao:");
+    let str = num.toString();
+    let result = [str[0]];
+    for (let x = 1; x < str.length; x++) {
+        if ((str[x - 1] % 2 === 0) && (str[x] % 2 === 0)) {
+            result.push('-', str[x]);
+        } else {
+            result.push(str[x]);
         }
     }
-
+    document.write(result.join(''));
+    // Lệnh console.log() có cú pháp console.log(value),
+    // trong đó value là biến hoặc giá trị mà bạn muốn in ra.
 </script>
 
 </body>

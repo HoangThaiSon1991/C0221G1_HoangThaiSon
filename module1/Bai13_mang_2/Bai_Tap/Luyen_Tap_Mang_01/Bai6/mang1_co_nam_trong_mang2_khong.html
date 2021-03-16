@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=prompt("nhap n phan tu");
+    let kiemTra=prompt("nhap vao V:")
+    let mang=[];
+    let k=true;
+    for (let i=0;i<n;i++) {
+        mang[i] = prompt("nhap gia tri cua mang");
+    } for (let i=0;i<n;i++){
+        if (mang[i]===kiemTra){
+          k=true;
+          break;
+        }else  k=false;
+
+        }if ( k){
+        alert(" gia tri nay co trong mang");
+    }else alert(" khong thuoc mang");
+
+
+    //     if (mang[i]===kiemTra){
+    //         alert("co gia nay trong mang");
+    //         break;
+    //
+    //     }else alert(" ko co gia tri nay");
+    // }
+</script>
+
+
+
+</body>
+</html>

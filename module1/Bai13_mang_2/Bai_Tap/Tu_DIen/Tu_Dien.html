@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    let dich = prompt("Từ cần dich:");
+    let anh = ["red", "green", "white", "black"];
+    let viet = ["do", "xanh", "trang", "den"];
+    let viTriAV = anh.indexOf(dich);
+    let viTriVA = viet.indexOf(dich);
+    //lấy vị trí của dich trong mang anh
+
+    if (viTriAV > -1) {
+        document.write(viet[viTriAV]);
+    } else if (viTriVA > -1) {
+        document.write(anh[viTriVA]);
+    } else {
+        document.write("Khong tim thay")
+    }
+</script>
+</body>
+</html>
